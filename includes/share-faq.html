@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row justify-content-center text-center align-items-center">
+        <div class="col-md-2 col-lg-1 col-12">
+            <p class="mb-0 desc-colour">Kongsikan</p>
+        </div>
+        <div class="col-md-1 col-2 d-md-none">
+            <a href="" target="_blank" id="share-whatsapp">
+                <img class="img-fluid" style=" margin: auto;" src="../assets/images/infopage/icon-whatsapp-2023.svg" alt="agensi icon"></img>
+            </a>
+        </div>
+        <div class="col-md-1 col-2 d-md-none">
+            <a href="" target="_blank" id="share-telegram">
+                <img class="img-fluid" style=" margin: auto;" src="../assets/images/infopage/icon-telegram-2023.svg" alt="email icon"></img>
+            </a>
+        </div>
+        <div class="col-md-1 col-2">
+            <a href="" class="twitter-share-button" id="share-twitter" target="_blank">
+                <img class="img-fluid" style=" margin: auto;" src="../assets/images/infopage/icon-twitter-2023.svg" alt="phone icon"></img>
+            </a>
+        </div>
+        <div class="col-md-1 col-2">
+            <a href="" target="_blank" rel="noopener noreferrer" id="share-facebook">
+                <img class="img-fluid" style=" margin: auto;" src="../assets/images/infopage/icon-facebook-2023.svg" alt="agensi icon"></img>
+            </a>
+        </div>
+        <div class="col-md-1 col-2">
+            <a href="" target="_blank" id="share-linkedin">
+                <img class="img-fluid" style=" margin: auto;" src="../assets/images/infopage/icon-linkedin-2023.svg" alt="email icon"></img>
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+
+<script>
+    $('#share-whatsapp').click(function(){
+            let predef_txt = "Layari Portal Manfaat 2023 untuk maklumat lebih lanjut "
+			let ws_url = "whatsapp://send?text=Layari Portal Manfaat 2023 untuk maklumat lebih lanjut " + window.location;
+			 $(this).attr('href', ws_url);
+		});
+		$('#share-telegram').click(function(){
+			let telegram_url = "https://t.me/share/url?url=" + window.location;
+			 $(this).attr('href', telegram_url);
+		});
+		$('#share-twitter').click(function(){
+			let twitter_url = "https://twitter.com/intent/tweet?text=" + "Layari Portal Manfaat 2023 untuk maklumat lebih lanjut " + window.location;
+			 $(this).attr('href', twitter_url);
+		});
+		$('#share-facebook').click(function(){
+			let facebook_url = "http://www.facebook.com/sharer.php?u=" + window.location;
+			 $(this).attr('href', facebook_url);
+		});
+		$('#share-linkedin').click(function(){
+			let linkedin_url = "http://www.linkedin.com/shareArticle?mini=true&url=" + window.location;
+			 $(this).attr('href', linkedin_url);
+		});
+</script>

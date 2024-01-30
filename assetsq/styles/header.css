@@ -1,0 +1,433 @@
+#navbar {
+  /* background: #FFE2C7; */
+  background: #F5F5F4;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+#navbar li {
+  padding-left: 15px;
+}
+
+#navbar .nav-link {
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #100052;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: .5px;
+  transition: all .25s ease;
+}
+
+#navbar .nav-link:hover, #navbar .nav-link:focus {
+  color: #f75757;
+}
+
+#navbar .btn {
+  padding: .5rem 1.5rem;
+  color: #fff;
+}
+
+.header-top {
+  background: #222328;
+  color: #919194;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-top .header-top-socials {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 12px 0px;
+}
+
+.header-top .header-top-socials a {
+  color: #919194;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.header-top .header-top-info {
+  color: #919194;
+  font-size: 16px;
+}
+
+.header-top .header-top-info a span {
+  color: #fff;
+}
+
+.header-top .header-top-info a {
+  margin-left: 35px;
+  color: #919194;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar-brand span {
+  color: #f75757;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+/* .dropdown:hover .dropdown-menu {
+  visibility: visible;
+  transition: all .45s ease 0s;
+  opacity: 1;
+} */
+
+.dropdown-item {
+  padding: .8rem 1.5rem;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background: #f75757;
+  color: #fff;
+}
+
+ul.dropdown-menu li {
+  padding-left: 0px !important;
+}
+
+nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: #e74c3c;
+}
+
+nav > div a.nav-item.nav-link.active:after {
+  content: "";
+  position: relative;
+  bottom: -60px;
+  left: -10%;
+  border: 15px solid transparent;
+  border-top-color: #e74c3c;
+}
+
+@media only screen and (min-width: 768px){
+  .card:first-child {
+    margin-left: 0;
+}
+}
+
+.offcanvas-top{
+  height: 100vh;
+  /* background: #FFE2C7; */
+  background: #F5F5F4;
+}
+
+.card-menu{
+  border-width: 0px 0px 1px 0px !important; 
+  padding: 5px 1.25rem !important;
+  background: transparent;
+}
+
+.accordion{
+  border-bottom: 1px solid #dfc6ae;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.accordion .card:first-of-type {
+  border-bottom: 1px solid #e0c7af;
+}
+
+.navbara.sticky > #navbar{
+  background: transparent;
+  box-shadow: none;
+  /* margin-top: 1.5rem;
+  margin-bottom: 1.5rem; */
+}
+
+.navbara.sticky > #navbar > .container{
+  transition: all .15s linear;
+  /* background: #FFE2C7; */
+  background: #F5F5F4;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.nav-search-btn{
+  color: #000!important; 
+  background: #fff; 
+  border-width: 1px 1px 1px 0px;
+  border-style: solid;
+  border-color: #ced4da;
+  border-radius: 0px 7px 7px 0px;
+  margin: 0px;
+}
+
+.form-control:focus{
+  box-shadow: none;
+  border: 1px solid #ced4da;
+}
+
+@media (max-width: 540px){
+  .navbara.sticky > #navbar{
+    /* background: #FFE2C7; */
+    background: #F5F5F4;
+    box-shadow: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .navbara.sticky > #navbar > .container{
+    /* background: #FFE2C7; */
+    background: #F5F5F4;
+    border-radius: 0px;
+    box-shadow: none;
+  }
+}
+
+.form-control#search_input{
+  border-radius: 7px 0px 0px 7px;
+}
+
+.accordion-button, .accordion-item, .accordion-button:focus{
+  background: transparent;
+}
+
+.accordion-button{
+  line-height: 42px;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  /* border-color: #FF8B20; */
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(255 139 22 / 25%);
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background: transparent;
+  border-bottom: 0;
+  box-shadow: none;
+}
+.accordion-button.collapsed {
+  color: #000;
+  background: transparent;
+  border-bottom: 1px solid #00000020 !important;
+  box-shadow: none;
+}
+.accordion-flush .accordion-item {
+  border-bottom: 0;
+}
+.accordion-button, .accordion-item, .accordion-button:focus{
+  background: transparent;
+  transition: none;
+}
+
+.accordion.accordion-flush{
+  border-bottom: 0;
+}
+#flush-heading4 > .border-bottom{
+  border-bottom: 1px solid #00000020 !important;
+}
+
+.offcanvas-body a {
+  color: #000;
+}
+
+.offcanvas-body a :hover {
+  color: #0a58ca;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+transform: rotate(-180deg);
+}
+
+@media (min-width: 993px){
+  .row .footer-line {
+      width: 0;
+  }
+}
+
+.footer-manfaat {
+  /* background: #121D49; */
+  background: linear-gradient(180deg, #262263 0%, #4300A5 84.37%);
+  padding: 3rem 0 .5rem 0;
+}
+
+.footer-manfaat .laksana-logo img {
+  width: 15%;
+  margin: 10px 0 0 0;
+}
+
+.footer-manfaat img {
+  display: initial;
+}
+
+.footer-manfaat a {
+  color: #FFF;
+}
+
+.footer-manfaat h3 {
+  font-size: 20px;
+  text-align: center;
+  color: #FFF;
+  font-weight: 500;
+  margin: 0 0 30px 0;
+}
+
+.footer-manfaat ul li {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0 30px 0;
+  color: #FFF;
+}
+
+.footer-manfaat .contact-icons img {
+  margin: 0 10px 0 0;
+  width: 25px;
+}
+
+.footer-manfaat .fab {
+  font-size: 24px;
+  margin: 0 20px;
+  color: #FFF;
+}
+
+.footer-manfaat .copyright h6 {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  color: #FFF;
+  margin: 3rem 0 0 0;
+}
+
+.footer-manfaat .copyright a {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+@media  (max-width: 992px) {
+  .footer-line{
+    border-left: none;
+    border-bottom: 1px solid #DBE2EA;
+    height: auto;
+    display: inline-block;
+    width: 75%;
+    justify-content: center;
+    margin: 20px auto 50px;
+    text-align: center;
+  }
+  
+  .footer-manfaat {
+    padding: 2rem 0 .5rem 0;
+  }
+
+  .footer-manfaat .laksana-logo img {
+    width: 35%;
+    margin: 10px 0 0 0;
+  }
+  
+  .footer-manfaat h3 {
+    font-size: 18px;
+  }
+  
+  .footer-manfaat ul li {
+    font-size: 14px;
+  }
+  
+  .footer-manfaat .fab {
+    font-size: 20px;
+    margin: 0 20px 30px;
+  }
+  
+  .footer-manfaat .copyright h6 {
+    font-size: 12px;
+  }
+}
+
+.footer-line {
+  border-left:1px solid #DBE2EA;
+  height: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.card {
+  margin: 0;
+  max-width: none;
+}
+
+.form-control#search_input, .form-control#search_input_2, .form-control#search_input_3{
+  border-radius: 7px 0px 0px 7px;
+}
+
+.offcanvas-body a :hover {
+  color: #000;
+}
+
+::placeholder{
+  font-style: italic;
+}
+
+.custom-nav-brand {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+@media(max-width: 768px){
+  .custom-nav-brand {
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.q-logo img{
+  padding-top: 0rem;
+  margin-bottom: 0.8rem;
+}
+
+
+.custom-nav-logo-manfaat img{
+  width: 100%;
+}
+
+.custom-nav-logo-belanja img{
+  width: 140px;
+  height: 75px;
+}
+
+@media(max-width: 390px){
+  .custom-nav-logo-manfaat img{
+    width: 150px
+  }
+  
+  .custom-nav-logo-belanja img{
+    width: 130px;
+    height: 75px;
+  }
+  .q-logo img{
+    padding-top: 0rem;
+    margin-bottom: 0.8rem;
+  }
+}
+
+@media(max-width: 378px){
+  .custom-nav-logo-manfaat img{
+    width: 130px
+  }
+  
+  .custom-nav-logo-belanja img{
+    width: 110px;
+    height: 75px;
+  }
+}

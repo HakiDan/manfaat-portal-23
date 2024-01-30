@@ -1,0 +1,118 @@
+.b-button{
+  background: transparent;
+  padding: 32px 10px;
+  border: none;
+  color: #100052;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 75%;
+  height: 12rem;
+  /* height: 14rem */
+  font-size: 110%;
+  margin-top: 15px;
+  padding: 1rem;
+  box-shadow: 4px 6px 10px rgb(0 0 0 / 25%), 4px 4px 4px rgb(0 0 0 / 25%);
+}
+/* some changes here if need to redesign the category btn */
+/* @media (max-width:480px){
+.b-button{
+  height: 12rem;
+}
+} */
+
+.b-button p, .b-button-p p{
+line-height: 17px;
+font-size: 0.9rem;
+padding-top: 3px;
+color: black;
+}
+
+.b-button-p{
+  box-shadow: 4px 6px 10px rgb(0 0 0 / 25%), 4px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.cate img{
+  max-width: 70%;
+}
+
+.b-button:hover img, .b-button:hover p, .b-button.active img, .b-button.active p{
+  filter:invert(33%) sepia(77%) saturate(956%) hue-rotate(182deg) brightness(98%) contrast(96%);
+}
+
+.b-button-p:hover p, .b-button-p.active p{
+  filter:invert(64%) sepia(65%) saturate(6124%) hue-rotate(1deg) brightness(95%) contrast(91%) ;
+} 
+
+/* design v2 */
+.btn-cate{
+  padding: 0rem;
+}
+
+.new-card{
+  height: 12rem;
+}
+.new-card:hover img{
+  filter:invert(16%) sepia(84%) saturate(7363%) hue-rotate(358deg) brightness(92%) contrast(119%);
+}
+
+.new-card:hover .btn-cate{
+  font-size: 1.2rem;
+    background: #a0c7f1;
+    border-radius: 78px;
+    color: #100052;
+    border-color: #a0c7f1;
+}
+
+.btn-cate.active{
+  font-size: 1.2rem;
+    background: #a0c7f1;
+    border-radius: 78px;
+    color: #100052;
+    border-color: #a0c7f1;
+}
+
+ .new-card.active img{
+  filter:invert(16%) sepia(84%) saturate(7363%) hue-rotate(358deg) brightness(92%) contrast(119%);
+ }
+
+ .b-button img:nth-child(2), .b-button-p img:nth-child(2){
+  display: none;
+ }
+
+ .b-button:hover img:first-child, .b-button.active img:first-child,.b-button-p:hover img:first-child, .b-button-p.active img:first-child{
+  display: none;
+ }
+
+ .b-button:hover img:nth-child(2), .b-button.active img:nth-child(2),.b-button-p:hover img:nth-child(2), .b-button-p.active img:nth-child(2){
+  display: block;
+ }
+
+ /* .sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  transform: translate(0,-200px);
+}
+
+.drops {
+  transform: translate(0,0);
+  transition: all .3s ease;
+} */
+
+.banner-icons{
+  
+  width: 80%;
+}
+.filtered-banner-icons{
+  filter:invert(33%) sepia(77%) saturate(956%) hue-rotate(182deg) brightness(98%) contrast(96%);
+}
+
+@media (max-width:480px){
+  .banner-icons{
+    width:40%
+  }
+
+}

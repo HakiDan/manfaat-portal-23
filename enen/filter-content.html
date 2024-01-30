@@ -1,0 +1,181 @@
+<section class="section testimonial">
+    <!-- <div class="container">
+                  <div>
+                      <div class="mt-3 content-title-filter text-center">
+              <style>
+                @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+                </style>
+              Terokai Bantuan yang Akan Datang</div>
+                      <p class="content-subtitle-filter text-center" style="font-size: 24px;">Gunakan Filter di bawah untuk buat carian terperinci</p>
+                  </div>
+      </div> -->
+
+      <div id="filter-selections" class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-12">
+            <div class="text-left">
+              <!-- <h2 class="mt-3 content-title">Terokai Bantuan yang Akan Datang</h2> -->
+              <p class="mb-0 px-2 f-25 desc-colour"><span style="font-weight: bold;" id="initiativeNumber"></span> Related Assistances</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row justify-content-center" style="text-align: center;">
+            <div class="col-xl-3 col-10 p-0" style="display: none;">
+                <h3 class="mb-3" style="text-align: start; font-size: 25px; color: #0B4887;">Type of Assistance</h3>
+                <div class=" p-1">
+                    <!-- <button id="rakyatBtn" class="btn btn-custom-filter w-75 tablinks" -->
+                    <button id="rakyatBtn" class="btn btn-custom-filter w-75 tablinks"
+                        onclick="{openCity(event, 'rakyatOptions');show_result(jData.individual, true);reset_selectOpt();update_banner_rakyat(is_english)}"
+                        style="text-transform: none;">
+                        <p class="m-0 align-self-center">Rakyat</p>
+                    </button>
+                </div>
+
+                <div class=" p-1">
+                    <!-- <button id="perniagaanBtn" class="btn btn-custom-filter w-75 tablinks" -->
+                    <button id="perniagaanBtn" class="btn btn-custom-filter-p w-75 tablinks"
+                        onclick="{openCity(event, 'perniagaanOptions');show_result(jData.business, true);reset_selectOpt();update_banner_perniagaan(is_english)}"
+                        style="text-transform: none;">
+                        <p class="m-0 align-self-center">Business</p>
+                    </button>
+                </div>
+
+                <div class=" p-1">
+                    <!-- <button id="komunitiBtn" class="btn btn-custom-filter w-75 tablinks" -->
+                    <button id="komunitiBtn" class="btn btn-custom-filter-c w-75 tablinks"
+                        onclick="{openCity(event, 'komunitiOptions');show_result(jData.community, true);reset_selectOpt();update_banner_komuniti(is_english)}"
+                        style="text-transform: none;">
+                        <p class="m-0 align-self-center">Community</p>
+                    </button>
+                </div>
+
+                <div id="rakyatOptions" class="tabcontent">
+                    <div class="col-xl-3 p-0">
+                        <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Profile</h3>
+                    </div>
+                    <div class="dropdown-b align-item-center">
+                        <select id="profilRakyatOpt" class="dropbtn card m-1 px-2 py-2 bg-green w-75">
+                            <option value="">Choose</option>
+                            <option value="I1ALL">General</option>
+                            <option value="I1INC1">Income < RM5,000</option>
+                            <option value="I1UNE">Job Seeker</option>
+                            <option value="I1RTR">Retired</option>
+                            <option value="I1NCIV">Private Sector Employees</option>
+                            <option value="I1GIG">Gig Workers / Self-Employed</option>
+                            <option value="I1STD">Students</option>
+                            <option value="I1FML">Women</option>
+                            <option value="I1DEP">With Dependents</option>
+                            <option value="I1AG1">Youth</option>
+                            <option value="I1AG3">Elderly</option>
+                            <option value="I1OKU">PWD</option>
+                        </select>
+                    </div>
+
+                    <div class="col-xl-3 p-0">
+                        <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Needs</h3>
+                    </div>
+                    <div class="dropdown-b">
+                        <select id="keperluanRakyatOpt" class="dropbtn card m-1 px-2 py-2 bg-green w-75">
+                            <option value="">Choose</option>
+                            <option value="I-FIN">Financial Assistance</option>
+                            <option value="I-HEA">Health</option>
+                            <option value="I-EMP">Employment</option>
+                            <option value="I-EDU">Education</option>
+                            <option value="I-SOC">Social Protection</option>
+                            <option value="I-VUL">Women, Children, Vulnerable Groups</option>
+                            <option value="I-TAX">Tax</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="perniagaanOptions" class="tabcontent">
+                    <div class="col-xl-3 p-0">
+                        <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Profile</h3>
+                    </div>
+                    <div class="dropdown-b justify-content-center">
+                        <select id="profilPerniaOpt" class="dropbtn card m-1 px-2 py-2 bg-green w-75">
+                            <option value="">Choose</option>
+                            <option value="B1ALL">General</option>
+                            <option value="B1ENT">Informal Sector (Not registered with SSM)</option>
+                            <option value="B1MIC">Micro</option>
+                            <option value="B1SME">SME</option>
+                            <option value="B1LAR">Large Business</option>
+                            <option value="B1AGRI">Agriculture & Commodity</option>
+                            <option value="B1MANU">Manufacturing Sector</option>
+                            <option value="B1CON">Construction Sector</option>
+                            <option value="B1SERV">Service Sector</option>
+                            <option value="B1TOU">Tourism Sector</option>
+                            <option value="B1SPO">Sports Sector</option>
+                            <option value="B1CRT">Creative Industry</option>
+                            <option value="B1GNL">Others</option>
+                            <option value="B1FML">Women Entepreneur</option>
+                            <option value="B1BUM">Bumiputera Business</option>
+                            <option value="B1STA">Startup</option>
+                            <option value="B1NBUM">Non-Bumiputera Business</option>
+                        </select>
+                    </div>
+
+                    <div class="col-xl-3 p-0">
+                        <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Needs</h3>
+                    </div>
+                    <div class="dropdown-b">
+                        <select id="keperluanPerniaOpt" class="dropbtn card m-1 px-2 py-2 bg-green w-75">
+                            <!-- <select id="profilSelect" class="dropdown-content-b"> -->
+                            <option value="">Choose</option>
+                            <option value="B-MKT">Market Access</option>
+                            <option value="B-CRT">Creative Assistance</option>
+                            <option value="B-TOU">Tourism Assistance</option>
+                            <option value="B-FIN">Financial & Funding Assistance</option>
+                            <option value="B-EMP">Recruitment</option>
+                            <option value="B-TAX">TAX</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="komunitiOptions" class="tabcontent">
+                    <div class="col-xl-3 p-0">
+                        <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Community
+                            Groups</h3>
+                    </div>
+                    <div class="dropdown-b">
+                        <select id="keperluanKomOpt" class="dropbtn card m-1 px-2 py-2 bg-green w-75">
+                            <option value="">Choose</option>
+                            <option value="ALL">General</option>
+                            <option value="NGO">NGO</option>
+                            <option value="INF">Infrastructure </option>
+                            <option value="RUR">Rural Community</option>
+                            <option value="ESG">Environmental, Social, Governance (ESG)</option>
+                            <option value="SS">Security & Support </option>
+                            <option value="DEV">Community Development</option>
+                            <option value="DG">Digital Access</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!--margin top 60px-->
+            <div class="row justify-content-center">
+              <div class="col-lg-10 col-12">
+                <div id="displayList" class="row justify-content-start">
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center" style="margin-bottom: 28px; margin-top: 28px;">
+              <div class="col-3 text-center">
+                <a id="seeMore">
+                  <img src="../assets/images/navNext.svg" alt="next icon" style="transform: rotate(90deg); cursor: pointer;">
+                </a>
+              </div>
+            </div>
+            
+        </div>
+</section>
+
+
+<script src="../assets/js/filter.js?v=1.0"></script>
+<script src="../assets/js/initiative_EN.js"></script>

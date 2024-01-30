@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+.accordion {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  
+}
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  border-radius: 10px;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  background-color: #b4025b;
+  color: white;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header-game {
+  background-color: #6600B0;
+  font-size: 1.5rem;
+   font-weight: 600;
+}
+
+a.accordion-item-header-game:hover {
+  color: #fbf9ff9c;
+}
+
+.accordion-item-header-faq {
+  background-color: #2073C8;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+a.accordion-item-header-faq:hover {
+  color: #fbf9ff9c;
+}
+
+.accordion-item-header::after {
+  content: "\002B";
+  font-size: 2rem;
+  display: flex;
+  position: absolute;
+  right: 1rem;
+}
+.accordion-item-header.active::after {
+  content: "\2212";
+}
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.5rem;
+  
+}
+
+/*landing page*/
+
+.accordion-1 {
+ 
+  margin: 2rem auto;
+}
+.accordion-1-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  border-radius: 10px;
+  line-height: 1.25rem;
+  font-weight: bold;
+  display: flex;
+  background-color: #b4025b;
+  color: white;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.accordion-1-item-header::after {
+  padding-bottom: 0px;
+  padding-left: 110px;
+  content: "\2304";
+  font-size: 2rem;
+  position: absolute;
+  right: 1rem;
+  float: right;
+
+}
+.accordion-1-item-header.active::after {
+  padding-top: 40px;
+  content: "\2303";
+  float: right;
+  position: absolute;
+}
+
+@media(max-width:767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+.accordion-button, .accordion-item, .accordion-button:focus{
+  background: transparent;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  /* border-color: #FF8B20; */
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(255 139 22 / 25%);
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  color: #000;
+  background: transparent;
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+#flush-heading4 > .border-bottom{
+  border-bottom: 1px solid #00000020 !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(-180deg);
+}

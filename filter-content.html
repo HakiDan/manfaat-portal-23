@@ -1,0 +1,1620 @@
+
+<section>
+  <div class="container">
+    <div class="row justify-content-center" id="filter-selections" style="text-align: center;">
+      <div class="col-md-12 col-12 p-0" style="display: block;">
+
+        <div class="d-none">
+          <h3 class="mb-3" style="text-align: start; font-size: 25px; color: #0B4887;">Jenis Bantuan</h3>
+          <div class=" p-1">
+            <button id="rakyatBtn" class="btn btn-custom-filter w-75 tablinks"
+              onclick="{openCity(event, 'rakyatOptions');show_result(jData.individual, false);reset_selectOpt();update_banner_rakyat(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Rakyat</p>
+            </button>
+          </div>
+          <!-- rakyat individual categories -->
+          <div class=" p-1">
+            <button id="rakyatBtn-fin" class="btn btn-custom-filter w-75 tablinks"
+              onclick="{openCity(event, 'rakyatOptions-fin');show_result(jData.individual, false);reset_selectOpt();update_banner_rakyat(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Kewangan Rakyat</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="rakyatBtn-edu" class="btn btn-custom-filter w-75 tablinks"
+              onclick="{openCity(event, 'rakyatOptions-edu');show_result(jData.individual, false);reset_selectOpt();update_banner_rakyat(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Latihan & Pendidikan Rakyat</p>
+            </button>
+          </div>
+          <div class=" p-1">
+            <button id="rakyatBtn-hea" class="btn btn-custom-filter w-75 tablinks"
+              onclick="{openCity(event, 'rakyatOptions-hea');show_result(jData.individual, false);reset_selectOpt();update_banner_rakyat(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Kesihatan Rakyat</p>
+            </button>
+          </div>
+          <div class=" p-1">
+            <button id="rakyatBtn-emp" class="btn btn-custom-filter w-75 tablinks"
+              onclick="{openCity(event, 'rakyatOptions-emp');show_result(jData.individual, false);reset_selectOpt();update_banner_rakyat(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Pekerjaan Rakyat</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="rakyatBtn-soc" class="btn btn-custom-filter w-75 tablinks"
+              onclick="{openCity(event, 'rakyatOptions-soc');show_result(jData.individual, false);reset_selectOpt();update_banner_rakyat(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Perlindungan Sosial Rakyat</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="rakyatBtn-vul" class="btn btn-custom-filter w-75 tablinks"
+              onclick="{openCity(event, 'rakyatOptions-vul');show_result(jData.individual, false);reset_selectOpt();update_banner_rakyat(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Perlindungan Golongan Rentan Rakyat</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="rakyatBtn-tax" class="btn btn-custom-filter w-75 tablinks"
+              onclick="{openCity(event, 'rakyatOptions-tax');show_result(jData.individual, false);reset_selectOpt();update_banner_rakyat(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Cukai Rakyat</p>
+            </button>
+          </div>
+
+          <!-- end rakyat individual categories  -->
+
+          <!-- start perniagaan category -->
+
+          <div class=" p-1">
+            <button id="perniagaanBtn" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Perniagaan</p>
+            </button>
+          </div>
+          <div class=" p-1">
+            <button id="perniagaanBtn-agr" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions-agr');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Pertanian Perniagaan</p>
+            </button>
+          </div>
+          <div class=" p-1">
+            <button id="perniagaanBtn-crt" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions-crt');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Kreatif Perniagaan</p>
+            </button>
+          </div>
+          <div class=" p-1">
+            <button id="perniagaanBtn-edu" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions-edu');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Latihan Perniagaan</p>
+            </button>
+          </div>
+          <div class=" p-1">
+            <button id="perniagaanBtn-fac" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions-fac');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Fasiliti & Kemudahan Perniagaan</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="perniagaanBtn-fin" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions-fin');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Kewangan Perniagaan</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="perniagaanBtn-inv" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions-inv');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Pelaburan Perniagaan</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="perniagaanBtn-mkt" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions-mkt');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Akses Pasaran Perniagaan</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="perniagaanBtn-emp" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions-emp');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Pengambilan Pekerja Perniagaan</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="perniagaanBtn-tax" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions-tax');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Cukai Perniagaan</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="perniagaanBtn-tou" class="btn btn-custom-filter-p w-75 tablinks"
+              onclick="{openCity(event, 'perniagaanOptions-tou');show_result(jData.business, false);reset_selectOpt();update_banner_perniagaan(is_english)}"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Bantuan Pelancongan Perniagaan</p>
+            </button>
+          </div>
+          <!-- end perniagaan category -->
+
+          <!-- start komuniti category -->
+
+          <div class=" p-1">
+            <button id="komunitiBtn" class="btn btn-custom-filter-c w-75 tablinks"
+              onclick="{openCity(event, 'komunitiOptions');show_result(jData.community, false);reset_selectOpt();}update_banner_komuniti(is_english)"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Komuniti</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="komunitiBtn-esg" class="btn btn-custom-filter-c w-75 tablinks"
+              onclick="{openCity(event, 'komunitiOptions-esg');show_result(jData.community, false);reset_selectOpt();}update_banner_komuniti(is_english)"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Komuniti ESG</p>
+            </button>
+          </div>
+
+          <div class=" p-1">
+            <button id="komunitiBtn-inf" class="btn btn-custom-filter-c w-75 tablinks"
+              onclick="{openCity(event, 'komunitiOptions-inf');show_result(jData.community, false);reset_selectOpt();}update_banner_komuniti(is_english)"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Komuniti Infrastruktur</p>
+            </button>
+          </div>
+  
+          <div class=" p-1">
+            <button id="komunitiBtn-ngo" class="btn btn-custom-filter-c w-75 tablinks"
+              onclick="{openCity(event, 'komunitiOptions-ngo');show_result(jData.community, false);reset_selectOpt();}update_banner_komuniti(is_english)"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Komuniti NGO</p>
+            </button>
+          </div>
+  
+          <div class=" p-1">
+            <button id="komunitiBtn-oa" class="btn btn-custom-filter-c w-75 tablinks"
+              onclick="{openCity(event, 'komunitiOptions-oa');show_result(jData.community, false);reset_selectOpt();}update_banner_komuniti(is_english)"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Komuniti Orang Asli</p>
+            </button>
+          </div>
+  
+          <div class=" p-1">
+            <button id="komunitiBtn-ss" class="btn btn-custom-filter-c w-75 tablinks"
+              onclick="{openCity(event, 'komunitiOptions-ss');show_result(jData.community, false);reset_selectOpt();}update_banner_komuniti(is_english)"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Komuniti Keselamatan</p>
+            </button>
+          </div>
+  
+          <div class=" p-1">
+            <button id="komunitiBtn-si" class="btn btn-custom-filter-c w-75 tablinks"
+              onclick="{openCity(event, 'komunitiOptions-si');show_result(jData.community, false);reset_selectOpt();}update_banner_komuniti(is_english)"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Komuniti Syiar Islam</p>
+            </button>
+          </div>
+  
+          <div class=" p-1">
+            <button id="komunitiBtn-bel" class="btn btn-custom-filter-c w-75 tablinks"
+              onclick="{openCity(event, 'komunitiOptions-bel');show_result(jData.community, false);reset_selectOpt();}update_banner_komuniti(is_english)"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Komuniti Belia & Sukan</p>
+            </button>
+          </div>
+  
+          <div class=" p-1">
+            <button id="komunitiBtn-dev" class="btn btn-custom-filter-c w-75 tablinks"
+              onclick="{openCity(event, 'komunitiOptions-dev');show_result(jData.community, false);reset_selectOpt();}update_banner_komuniti(is_english)"
+              style="text-transform: none;">
+              <p class="m-0 align-self-center">Komuniti Pembangunan</p>
+            </button>
+          </div>
+        </div>
+
+        
+        <div id="rakyatOptions" class="tabcontent">
+          <!-- <div class="row justify-content-center">
+            <div class="col-lg-10 px-2 text-start">
+              <h3 class="mb-2 f-25 desc-colour px-2 pt-3">Profil</h3>
+            </div>
+          </div> -->
+          <div class="row justify-content-center">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilRakyatOpt" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="I1ALL">Umum</option>
+                <option value="I1INC1">Pendapatan &#60; RM5,000</option>
+                <option value="I1UNE">Pencari Kerja</option>
+                <option value="I1RTR">Pesara</option>
+                <option value="I1NCIV">Pekerja Swasta</option>
+                <option value="I1GIG">Pekerja Gig / Pekerja Sendiri</option>
+                <option value="I1STD">Pelajar</option>
+                <option value="I1FML">Wanita</option>
+                <option value="I1DEP">Dengan Tanggungan</option>
+                <option value="I1AG1">Belia</option>
+                <option value="I1AG3">Warga Emas</option>
+                <option value="I1OKU">OKU</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-rakyat" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+          
+          <!-- <div class="row justify-content-center">
+            <div class="col-lg-10 px-2 text-start">
+              <h3 class="mb-2 f-25 desc-colour px-2 pt-3">Status</h3>
+            </div>
+          </div> -->
+          <!-- <div class="row justify-content-center">
+            <div class="col-lg-2 px-2 text-start">
+              <h3 class="mb-2 f-25 desc-colour px-2 pt-3">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="ini-status-rakyat" class="dropbtn card m-0 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <option value="OP22">Permohonan Dibuka 2022</option>
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div> -->
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanRakyatOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="I-FIN">Bantuan Kewangan</option>
+              <option value="I-HEA">Kesihatan</option>
+              <option value="I-EMP">Pekerjaan</option>
+              <option value="I-EDU">Pendidikan</option>
+              <option value="I-SOC">Perlindungan Sosial</option>
+              <option value="I-VUL">Wanita, Kanak-kanak, Kumpulan Rentan</option>
+              <option value="I-TAX">Cukai</option>
+            </select>
+          </div>
+        </div>
+
+<!-- rakyat filter start here -->
+
+        <div id="rakyatOptions-fin" class="tabcontent">
+          <div class="row justify-content-center">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilRakyatOpt-fin" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <!-- <option value="I1ALL">Umum financial</option> -->
+                <option value="IFIIK">Bantuan <em>In Kind</em></option>
+                <option value="IFITN">Bantuan Tunai</option>
+                <option value="IFISB">Subsidi & Insentif</option>
+                <option value="IFIDSR">Pindaan Dasar/Akta</option>
+                <option value="IFIJMN">Bayaran Balik & Jaminan Pinjaman</option>
+                <option value="IFITAX">Langkah Cukai</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-rakyat-fin" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanRakyatOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="I-FIN">Bantuan Kewangan</option>
+              <option value="I-HEA">Kesihatan</option>
+              <option value="I-EMP">Pekerjaan</option>
+              <option value="I-EDU">Pendidikan</option>
+              <option value="I-SOC">Perlindungan Sosial</option>
+              <option value="I-VUL">Wanita, Kanak-kanak, Kumpulan Rentan</option>
+              <option value="I-TAX">Cukai</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="rakyatOptions-edu" class="tabcontent">
+          <div class="row justify-content-center">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilRakyatOpt-edu" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="IEDSK">Latihan Kemahiran & Perantisan</option>
+                <!-- <option value="IEDDGT">Latihan Digital</option> -->
+                <option value="IEDSB">Subsidi Pembelajaran</option>
+                <!-- <option value="IEDLL">Lain-lain</option> -->
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-rakyat-edu" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanRakyatOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="I-FIN">Bantuan Kewangan</option>
+              <option value="I-HEA">Kesihatan</option>
+              <option value="I-EMP">Pekerjaan</option>
+              <option value="I-EDU">Pendidikan</option>
+              <option value="I-SOC">Perlindungan Sosial</option>
+              <option value="I-VUL">Wanita, Kanak-kanak, Kumpulan Rentan</option>
+              <option value="I-TAX">Cukai</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="rakyatOptions-hea" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilRakyatOpt-hea" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="I1ALL">Skim Kesihatan</option>
+                <option value="IHESUB">Subsidi</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-rakyat-hea" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanRakyatOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="I-FIN">Bantuan Kewangan</option>
+              <option value="I-HEA">Kesihatan</option>
+              <option value="I-EMP">Pekerjaan</option>
+              <option value="I-EDU">Pendidikan</option>
+              <option value="I-SOC">Perlindungan Sosial</option>
+              <option value="I-VUL">Wanita, Kanak-kanak, Kumpulan Rentan</option>
+              <option value="I-TAX">Cukai</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="rakyatOptions-emp" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilRakyatOpt-emp" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="I1ALL">Penempatan Pekerjaan</option>
+                <option value="I1ALL">Sokongan Perniagaan</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-rakyat-emp" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanRakyatOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="I-FIN">Bantuan Kewangan</option>
+              <option value="I-HEA">Kesihatan</option>
+              <option value="I-EMP">Pekerjaan</option>
+              <option value="I-EDU">Pendidikan</option>
+              <option value="I-SOC">Perlindungan Sosial</option>
+              <option value="I-VUL">Wanita, Kanak-kanak, Kumpulan Rentan</option>
+              <option value="I-TAX">Cukai</option>
+            </select>
+          </div>
+        </div>
+        <!-- remove p-0 and style: display none -->
+        <div id="rakyatOptions-soc" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilRakyatOpt-soc" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="I1ALL">Perlindungan Persaraan</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-rakyat-soc" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanRakyatOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="I-FIN">Bantuan Kewangan</option>
+              <option value="I-HEA">Kesihatan</option>
+              <option value="I-EMP">Pekerjaan</option>
+              <option value="I-EDU">Pendidikan</option>
+              <option value="I-SOC">Perlindungan Sosial</option>
+              <option value="I-VUL">Wanita, Kanak-kanak, Kumpulan Rentan</option>
+              <option value="I-TAX">Cukai</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="rakyatOptions-vul" class="tabcontent">
+          <div class="row justify-content-center">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilRakyatOpt-vul" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="IVUSK">Latihan Kemahiran</option>
+                <option value="IVUTN">Bantuan Tunai & Subsidi</option>
+                <option value="IVUDR">Pindaan Dasar Akta</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-rakyat-vul" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanRakyatOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="I-FIN">Bantuan Kewangan</option>
+              <option value="I-HEA">Kesihatan</option>
+              <option value="I-EMP">Pekerjaan</option>
+              <option value="I-EDU">Pendidikan</option>
+              <option value="I-SOC">Perlindungan Sosial</option>
+              <option value="I-VUL">Wanita, Kanak-kanak, Kumpulan Rentan</option>
+              <option value="I-TAX">Cukai</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="rakyatOptions-tax" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilRakyatOpt-tax" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="I1ALL">Umum tax</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-rakyat-tax" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanRakyatOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="I-FIN">Bantuan Kewangan</option>
+              <option value="I-HEA">Kesihatan</option>
+              <option value="I-EMP">Pekerjaan</option>
+              <option value="I-EDU">Pendidikan</option>
+              <option value="I-SOC">Perlindungan Sosial</option>
+              <option value="I-VUL">Wanita, Kanak-kanak, Kumpulan Rentan</option>
+              <option value="I-TAX">Cukai</option>
+            </select>
+          </div>
+        </div>
+<!-- perniagaan filter start here -->
+        <div id="perniagaanOptions" class="tabcontent p-0">
+          <!-- <div class="row justify-content-center">
+            <div class="col-lg-10 px-2 text-start">
+              <h3 class="mb-2 f-25 desc-colour px-2 pt-3">Profil</h3>
+            </div>
+          </div> -->
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="B1ALL">Umum</option>
+                <option value="B1ENT">Sektor Informal (Tiada pendaftaran SSM)</option>
+                <option value="B1MIC">Mikro</option>
+                <option value="B1SME">PKS</option>
+                <option value="B1LAR">Perniagaan Besar</option>
+                <option value="B1AGRI">Sektor Pertanian & Komoditi</option>
+                <option value="B1MANU">Sektor Pembuatan</option>
+                <option value="B1CON">Sektor Pembinaan</option>
+                <option value="B1SERV">Sektor Perkhidmatan</option>
+                <option value="B1TOU">Sektor Pelancongan</option>
+                <option value="B1SPO">Sektor Sukan</option>
+                <option value="B1CRT">Industri Kreatif</option>
+                <option value="B1GNL">Sektor Lain</option>
+                <option value="B1BUM">Perniagaan Bumiputera</option>
+                <option value="B1FML">Perniagaan Wanita</option>
+                <option value="B1STA">Startup</option>
+                <option value="B1NBUM">Perniagaan Bukan Bumiputera</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+          
+
+          <!-- <div class="row justify-content-center">
+            <div class="col-lg-10 px-2 text-start">
+              <h3 class="mb-2 f-25 desc-colour px-2 pt-3">Status</h3>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-12 align-item-center">
+              <select id="ini-status-perniagaan" class="dropbtn card m-0 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <option value="OP22">Permohonan Dibuka 2022</option>
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div> -->
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="perniagaanOptions-agr" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt-agr" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="B1ALL">Umum agr</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan-agr" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="perniagaanOptions-crt" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt-crt" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="B1ALL">Umum crt</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan-crt" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="perniagaanOptions-edu" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt-edu" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="B1ALL">Kemahiran Eksekutif</option>
+                <option value="B1ALL">Usahawan Bumiputera</option>
+                <option value="B1ALL">Usahawan Mikro</option>
+                <option value="B1ALL">Lain-lain</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan-edu" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="perniagaanOptions-fac" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt-fac" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="B1ALL">Pengeluaran Pertanian</option>
+                <option value="B1ALL">Menaik Taraf Premis Perniagaan</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan-fac" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="perniagaanOptions-fin" class="tabcontent">
+          <div class="row justify-content-center">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt-fin" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="BFIMC">Pinjaman - Mikro</option>
+                <option value="BFISB">Subsidi</option>
+                <option value="BFIJN">Pinjaman & Jaminan Pinjaman</option>
+                <option value="BFIGN">Geran</option>
+                <option value="BFIHJ">Pinjaman - Amalan Hijau</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan-fin" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="perniagaanOptions-inv" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt-inv" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="B1ALL">Syarikat Pemula</option>
+                <option value="B1ALL">Pasaran Modal</option>
+                <option value="B1ALL">Syarikat Pemula</option>
+                <option value="B1ALL">Zon Kewangan</option>
+                <option value="B1ALL">Perkembangan Ekonomi</option>
+                <option value="B1ALL">Lain-lain</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan-inv" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="perniagaanOptions-mkt" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt-mkt" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="B1ALL">Perlindungan Eksport</option>
+                <option value="B1ALL">ICT Untuk Usahawan</option>
+                <option value="B1ALL">Perluasan Kapasiti Perniagaan</option>
+                <option value="B1ALL">Usahawan SME</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan-mkt" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="perniagaanOptions-emp" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt-emp" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="B1ALL">Pemimpin Masa Depan</option>
+                <option value="B1ALL">Insentif</option>
+                <option value="B1ALL">Tenaga Kerja Berkualiti</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan-emp" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <option value="OP22">Permohonan Dibuka 2022</option>
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="perniagaanOptions-tax" class="tabcontent">
+          <div class="row justify-content-center">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt-tax" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="BTXRD">Pengurangan Cukai</option>
+                <option value="BTXEX">Pengecualian Cukai & Duti</option>
+                <option value="BTXRB">Galakan Cukai</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan-tax" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+
+        <div id="perniagaanOptions-tou" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilPerniaOpt-tou" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="B1ALL">Umum tou</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-perniagaan-tou" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col-md-3 p-0 d-none">
+            <h3 class="mb-3 pt-3" style="text-align: start; font-size: 25px; color: #0B4887;">Keperluan</h3>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanPerniaOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="B-MKT">Akses Pasaran</option>
+              <option value="B-CRT">Bantuan Kreatif</option>
+              <option value="B-TOU">Bantuan Pelancongan</option>
+              <option value="B-FIN">Bantuan Tunai & Pembiayaan</option>
+              <option value="B-EMP">Pekerjaan</option>
+              <option value="B-TAX">Cukai</option>
+              <option value="B-FAC">Kemudahan</option>
+              <option value="B-INV">Pelaburan</option>
+              <option value="B-EDU">Latihan Keusahawanan</option>
+              <option value="B-AGR">Bantuan Pertanian & Keterjaminan Makanan</option>
+            </select>
+          </div>
+        </div>
+<!-- komoniti filter starts here -->
+        <div id="komunitiOptions-esg" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilKomunitiOpt-esg" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="KPT">test ESG</option>
+                <option value="KSBH">test 2</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-komuniti-esg" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanKomOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="ALL">Umum</option>
+              <option value="NGO">NGO</option>
+              <option value="INF">Infrastruktur</option>
+              <option value="RUR">Komuniti Luar Bandar</option>
+              <option value="ESG">Environmental, Social, Governance (ESG)</option>
+              <option value="SS">Keselamatan & Sokongan</option>
+              <option value="DEV">Pembangunan Komuniti</option>
+              <option value="DG">Akses Digital</option>
+              <option value="OA">Orang Asli</option>
+              <option value="SI">Syiar Islam</option>
+              <option value="BEL">Belia & Sukan</option>
+            </select>
+          </div>
+          
+        </div>
+
+        <div id="komunitiOptions-inf" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilKomunitiOpt-inf" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="KPT">inf</option>
+                <option value="KSBH">test 3</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-komuniti-inf" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanKomOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="ALL">Umum</option>
+              <option value="NGO">NGO</option>
+              <option value="INF">Infrastruktur</option>
+              <option value="RUR">Komuniti Luar Bandar</option>
+              <option value="ESG">Environmental, Social, Governance (ESG)</option>
+              <option value="SS">Keselamatan & Sokongan</option>
+              <option value="DEV">Pembangunan Komuniti</option>
+              <option value="DG">Akses Digital</option>
+              <option value="OA">Orang Asli</option>
+              <option value="SI">Syiar Islam</option>
+              <option value="BEL">Belia & Sukan</option>
+            </select>
+          </div>
+          
+        </div>
+
+        <div id="komunitiOptions-ngo" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilKomunitiOpt-ngo" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="KPT">ngo</option>
+                <option value="KSBH">test 4</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-komuniti-esg" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanKomOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="ALL">Umum</option>
+              <option value="NGO">NGO</option>
+              <option value="INF">Infrastruktur</option>
+              <option value="RUR">Komuniti Luar Bandar</option>
+              <option value="ESG">Environmental, Social, Governance (ESG)</option>
+              <option value="SS">Keselamatan & Sokongan</option>
+              <option value="DEV">Pembangunan Komuniti</option>
+              <option value="DG">Akses Digital</option>
+              <option value="OA">Orang Asli</option>
+              <option value="SI">Syiar Islam</option>
+              <option value="BEL">Belia & Sukan</option>
+            </select>
+          </div>
+          
+        </div>
+
+        <div id="komunitiOptions-oa" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilKomunitiOpt-oa" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="KPT">oa</option>
+                <option value="KSBH">test 5</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-komuniti-oa" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanKomOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="ALL">Umum</option>
+              <option value="NGO">NGO</option>
+              <option value="INF">Infrastruktur</option>
+              <option value="RUR">Komuniti Luar Bandar</option>
+              <option value="ESG">Environmental, Social, Governance (ESG)</option>
+              <option value="SS">Keselamatan & Sokongan</option>
+              <option value="DEV">Pembangunan Komuniti</option>
+              <option value="DG">Akses Digital</option>
+              <option value="OA">Orang Asli</option>
+              <option value="SI">Syiar Islam</option>
+              <option value="BEL">Belia & Sukan</option>
+            </select>
+          </div>
+          
+        </div>
+
+        <div id="komunitiOptions-ss" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilKomunitiOpt-ss" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="KPT">ss</option>
+                <option value="KSBH">test 6</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-komuniti-ss" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanKomOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="ALL">Umum</option>
+              <option value="NGO">NGO</option>
+              <option value="INF">Infrastruktur</option>
+              <option value="RUR">Komuniti Luar Bandar</option>
+              <option value="ESG">Environmental, Social, Governance (ESG)</option>
+              <option value="SS">Keselamatan & Sokongan</option>
+              <option value="DEV">Pembangunan Komuniti</option>
+              <option value="DG">Akses Digital</option>
+              <option value="OA">Orang Asli</option>
+              <option value="SI">Syiar Islam</option>
+              <option value="BEL">Belia & Sukan</option>
+            </select>
+          </div>
+          
+        </div>
+
+        <div id="komunitiOptions-si" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilKomunitiOpt-si" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="KPT">si</option>
+                <option value="KSBH">test 7</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-komuniti-si" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanKomOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="ALL">Umum</option>
+              <option value="NGO">NGO</option>
+              <option value="INF">Infrastruktur</option>
+              <option value="RUR">Komuniti Luar Bandar</option>
+              <option value="ESG">Environmental, Social, Governance (ESG)</option>
+              <option value="SS">Keselamatan & Sokongan</option>
+              <option value="DEV">Pembangunan Komuniti</option>
+              <option value="DG">Akses Digital</option>
+              <option value="OA">Orang Asli</option>
+              <option value="SI">Syiar Islam</option>
+              <option value="BEL">Belia & Sukan</option>
+            </select>
+          </div>
+          
+        </div>
+
+        <div id="komunitiOptions-bel" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilKomunitiOpt-bel" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="KPT">bel</option>
+                <option value="KSBH">test 8</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-komuniti-bel" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanKomOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="ALL">Umum</option>
+              <option value="NGO">NGO</option>
+              <option value="INF">Infrastruktur</option>
+              <option value="RUR">Komuniti Luar Bandar</option>
+              <option value="ESG">Environmental, Social, Governance (ESG)</option>
+              <option value="SS">Keselamatan & Sokongan</option>
+              <option value="DEV">Pembangunan Komuniti</option>
+              <option value="DG">Akses Digital</option>
+              <option value="OA">Orang Asli</option>
+              <option value="SI">Syiar Islam</option>
+              <option value="BEL">Belia & Sukan</option>
+            </select>
+          </div>
+          
+        </div>
+
+        <div id="komunitiOptions-dev" class="tabcontent p-0">
+          <div class="row justify-content-center" style="display: none;">
+            <div class="col-lg-1 px-2 text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour px-2 pt-0">Kategori</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-item-center">
+              <select id="profilKomunitiOpt-dev" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="KPT">dev</option>
+                <option value="KSBH">test 6</option>
+              </select>
+            </div>
+            <div class="col-lg-1 pl-2 pr-0 text-lg-center text-start align-self-center">
+              <h3 class="mb-2 f-20 desc-colour pl-2 pt-0">Status</h3>
+            </div>
+            <div class="col-lg-4 col-12 align-self-center">
+              <select id="ini-status-komuniti-dev" class="dropbtn card mb-2 px-2 py-2 w-100">
+                <option value="">Semua</option>
+                <option value="OP23">Permohonan Dibuka</option>
+                <!-- <option value="OP22">Permohonan Dibuka 2022</option> -->
+                <option value="END">Permohonan Telah Ditutup</option>
+                <option value="RAY">Rayuan Dibuka</option>
+                <option value="NON">Tiada Permohonan Diperlukan</option>
+                <option value="UP23">Akan Datang</option>
+              </select>
+            </div>
+          </div>
+          <div class="dropdown-b d-none">
+            <select id="keperluanKomOpt" class="dropbtn card m-0 px-2 py-2 w-75">
+              <option value="">Sila Pilih</option>
+              <option value="ALL">Umum</option>
+              <option value="NGO">NGO</option>
+              <option value="INF">Infrastruktur</option>
+              <option value="RUR">Komuniti Luar Bandar</option>
+              <option value="ESG">Environmental, Social, Governance (ESG)</option>
+              <option value="SS">Keselamatan & Sokongan</option>
+              <option value="DEV">Pembangunan Komuniti</option>
+              <option value="DG">Akses Digital</option>
+              <option value="OA">Orang Asli</option>
+              <option value="SI">Syiar Islam</option>
+              <option value="BEL">Belia & Sukan</option>
+            </select>
+          </div>
+          
+        </div>
+        
+      </div>
+
+    </div>
+    <section class="section testimonial">
+      <div  class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 col-12">
+            <div class="text-left" id="ini-parent-div" >
+              <p class="mb-0 px-2 f-25 desc-colour"><span style="font-weight: bold;" id="initiativeNumber"></span> Skim Bantuan Belanjawan 2023 Berkaitan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-12">
+          <div id="displayList" class="row justify-content-start">
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center" style="margin-bottom: 28px; margin-top: 28px;">
+        <div class="col-3 text-center">
+          <a id="seeMore">
+            <img src="./assets/images/navNext-2023.svg" alt="next icon">
+          </a>
+        </div>
+      </div>
+    
+  </div>
+</section>
+
+
+<script src="./assets/js/filter.js?v=2.0"></script>
+<script src="./assets/js/initiative_BM.js"></script>
